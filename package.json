@@ -42,7 +42,7 @@
     "styled-icons": "^10.28.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
+    "@babel/core": "^7.12.17",
     "@babel/preset-typescript": "^7.12.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/react": "^6.1.18",
