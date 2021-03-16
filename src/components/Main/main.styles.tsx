@@ -1,35 +1,42 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
-  color: #fff;
-
-  height: 100%;
-  width: 100%;
-
-  padding: 3rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    height: 50vh;
+    width: 80vh;
+    margin: 25vh auto;
+    padding: ${theme.spacings.medium};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  `}
 `
 
 export const Logo = styled.img`
-  width: 25rem;
-  margin-bottom: 2rem;
+  ${({ theme }) => css`
+    width: ${theme.spacings.xxlarge};
+    margin: ${theme.spacings.xxsmall} 0;
+  `}
 `
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xxlarge};
+  `}
 `
 
 export const Description = styled.h2`
-  font-size: 2rem;
-  font-weight: 400;
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xlarge};
+    font-weight: ${theme.font.normal};
+  `}
 `
 
 export const Illustration = styled.img`
-  margin-top: 3rem;
-  width: min(30rem, 100%);
+  ${({ theme }) => css`
+    margin-top: ${theme.spacings.medium};
+    width: min(30rem, 100%);
+  `}
 `

@@ -2,11 +2,11 @@
 
 exports[`<Main /> should render the heading 1`] = `
 .c0 {
-  background-color: #06092b;
-  color: #fff;
-  height: 100%;
-  width: 100%;
-  padding: 3rem;
+  color: #FAFAFA;
+  height: 50vh;
+  width: 80vh;
+  margin: 25vh auto;
+  padding: 3.2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,21 +25,21 @@ exports[`<Main /> should render the heading 1`] = `
 }
 
 .c1 {
-  width: 25rem;
-  margin-bottom: 2rem;
+  width: 5.6rem;
+  margin: 0.8rem 0;
 }
 
 .c2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .c3 {
-  font-size: 2rem;
+  font-size: 2.0rem;
   font-weight: 400;
 }
 
 .c4 {
-  margin-top: 3rem;
+  margin-top: 3.2rem;
   width: min(30rem,100%);
 }
 
@@ -47,22 +47,22 @@ exports[`<Main /> should render the heading 1`] = `
   class="c0"
 >
   <img
-    alt="Imagem de um átomo e React Avançado escrito ao lado."
+    alt="Image of an atom."
     class="c1"
     src="/img/logo.svg"
   />
   <h1
     class="c2"
   >
-    React Avançado
+    Template
   </h1>
   <h2
     class="c3"
   >
-    Typescript, ReactJS, NextJS, Styled Components & Storybook
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
   </h2>
   <img
-    alt="Um desenvolvedor de frente para uma tela com código."
+    alt="A developer coding in a desktop."
     class="c4"
     src="/img/hero-illustration.svg"
   />

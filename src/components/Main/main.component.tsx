@@ -3,19 +3,16 @@ import * as S from './main.styles'
 export const Main = () => {
   return (
     <S.Wrapper>
-      <S.Logo
-        src="/img/logo.svg"
-        alt="Imagem de um átomo e React Avançado escrito ao lado."
-      />
+      <S.Logo src="/img/logo.svg" alt="Image of an atom." />
 
-      <S.Title>React Avançado</S.Title>
+      <S.Title>Template</S.Title>
       <S.Description>
-        Typescript, ReactJS, NextJS, Styled Components &amp; Storybook
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </S.Description>
 
       <S.Illustration
         src="/img/hero-illustration.svg"
-        alt="Um desenvolvedor de frente para uma tela com código."
+        alt="A developer coding in a desktop."
       />
     </S.Wrapper>
   )

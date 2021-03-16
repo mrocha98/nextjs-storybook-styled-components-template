@@ -2,25 +2,22 @@
   "name": "nextjs-storybook-template",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "lint": "eslint --ext ts,tsx src --max-warnings=0",
     "lint:fix": "yarn lint --fix",
-    "test": "jest",
+    "test": "NODE_ENV=test jest",
     "test:update-snaps": "yarn test -u",
     "test:bail": "yarn test --bail",
     "test:watch": "yarn test --watch",
     "storybook:build": "build-storybook -s ./public",
     "storybook:start": "start-storybook -s ./public -p 6006",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "postinstall": "husky install"
   },
   "lint-staged": {
     "src/**/*": [
@@ -28,18 +25,14 @@
       "yarn test:bail --findRelatedTests"
     ]
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "next": "10.0.8",
     "next-pwa": "^5.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1",
-    "styled-icons": "^10.29.0"
+    "styled-icons": "^10.29.0",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -56,8 +49,6 @@
     "@typescript-eslint/parser": "^4.17.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
-    "commitizen": "^4.2.3",
-    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
