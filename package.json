@@ -2,7 +2,7 @@
   "name": "nextjs-storybook-template",
   "version": "0.1.0",
   "private": true,
-  "license": "MIT",
+  "license": "WTFPL",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
