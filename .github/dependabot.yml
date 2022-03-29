@@ -3,21 +3,6 @@ updates:
 - package-ecosystem: npm
   directory: "/"
   schedule:
-    interval: weekly
+    interval: monthly
     time: "08:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "@storybook/react"
-    versions:
-    - 6.2.2
-    - 6.2.3
-    - 6.2.8
-  - dependency-name: "@typescript-eslint/parser"
-    versions:
-    - 4.20.0
-  - dependency-name: "@types/styled-components"
-    versions:
-    - 5.1.8
-  - dependency-name: "@typescript-eslint/eslint-plugin"
-    versions:
-    - 4.17.0
+  open-pull-requests-limit: 5
